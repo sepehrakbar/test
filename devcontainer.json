@@ -1,0 +1,24 @@
+{
+  "name": "React Native Android",
+  "image": "mcr.microsoft.com/vscode/devcontainers/android:1-17",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    }
+  },
+  "portsAttributes": {
+    "8081": {
+      "label": "Metro Bundler"
+    },
+    "3000-3003": {
+      "label": "React Native Inspector"
+    },
+    "5555": {
+      "label": "ADB Reverse TCP"
+    }
+  },
+  "postCreateCommand": "npm install"
+}
